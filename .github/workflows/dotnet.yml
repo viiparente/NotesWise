@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore .\backend\NotesWise.sln
+      run: dotnet restore ./backend/NotesWise.sln
     - name: Build
-      run: dotnet build --no-restore .\backend\NotesWise.sln
+      run: dotnet build --no-restore ./backend/NotesWise.sln
     - name: Test
-      run: dotnet test --no-build --verbosity normal .\backend\NotesWise.sln
+      run: dotnet test --no-build --verbosity normal ./backend/NotesWise.sln
